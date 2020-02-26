@@ -2,6 +2,7 @@
     <meta charset="UTF-8">
     <title>E-Commerce Marketplace</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/products.css">
 </head>
 <body data-gr-c-s-loaded="true">
 <div id="navigationBar" class="pos-f-t">
@@ -26,65 +27,55 @@
 
 <div id="main" class="container my-3">
 
-    <div id="displayContent" class="row">
-        <div id="sortingOptions" class="col-4">
-            <div id="orderBy" class="py-3">
-                <div class="d-flex">
-                    <div class="mx-auto p-2">
+    <div id="displayContent" class="row py-3">
+        <div id="sortingOptions" class="col-2">
+            <div id="orderBy" class="">
+                <div class="">
+                    <div class="mx-auto">
                         <h6>Order By</h6>
                     </div>
-                    <div class="dropdown mr-1">
-                        <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                            Select
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
+                    <div class="mx-auto ">
+                        <select name="orderBy">
+                            <option value="" disabled selected hidden>Please choose</option>
+                            <option value="title">Title</option>
+                            <option value="price">Price</option>
+                        </select>
                     </div>
+
                 </div>
             </div>
-            <div id="priceRange" class="py-3">
-                <div class="d-flex">
-                    <div class="mx-auto p-2">
+            <div id="priceRange" class="">
+                <div class="">
+                    <div class="mx-auto">
                         <h6>Prince Range</h6>
                     </div>
-                    <div class="dropdown mr-1">
-                        <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                            Select
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                            <a class="dropdown-item" href="#">Free</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
+                    <div class="mx-auto">
+                        <select name="orderBy">
+                            <option value="" disabled selected hidden>Please choose</option>
+                            <option value="30">Under $30</option>
+                            <option value="31">Above $30</option>
+                        </select>
                     </div>
                 </div>
             </div>
-            <div id="category" class="py-3">
-                <div class="d-flex">
-                    <div class="mx-auto p-2">
+            <div id="category" class="">
+                <div class="">
+                    <div class="mx-auto">
                         <h6>Category</h6>
                     </div>
-                    <div class="dropdown mr-1">
-                        <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                            Select
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
+                    <div class="mx-auto">
+                        <select name="orderBy">
+                            <option value="" disabled selected hidden>Please choose</option>
+                            <option value="colors">Colors</option>
+                            <option value="black-and-white">B&W</option>
+                        </select>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div id="products"class="col-8">  <!--PRODUCTS -->
-
+        <div id="products"class="col-10">
+            <div class="list-container"> </div>
         </div>
-
     </div>
 
     <div id="foot" class="d-flex justify-content-between rounded bg-dark text-white p-3">
@@ -101,8 +92,8 @@
         </div>
     </div>
 </div>
+
 <script type="text/javascript" src="js/productList.js"></script>
-<script type="text/javascript" src="js/landing.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
